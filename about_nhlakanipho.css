@@ -114,6 +114,7 @@ h3 {
 
 .about-me p {
     text-align: left;
+    font-size: 20px;
 }
 
 
@@ -126,6 +127,9 @@ h3 {
 .cv-image {
     /* border: 10px solid var(--accent-color); */
     border-radius: 10px;
+    width: 225px;
+    height: 160px;
+    filter: brightness(0.95);
 }
 
 
@@ -183,7 +187,7 @@ h3 {
 }
 
 .python_logo, .vscode_logo, .github_logo, .docker_logo, .mongodb_logo, 
-.css_logo, .sql_logo, .pandas_logo, .jupyter_logo, .visitors, .cv-image {
+.css_logo, .sql_logo, .pandas_logo, .jupyter_logo, .visitors {
     width: 225px;
     height: 225px;
     filter: brightness(1);
@@ -191,32 +195,32 @@ h3 {
 
 /* Contacts Section */
 .contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     background-color: var(--accent-color);  
     border-radius: 10px;
     color: var(--font-color);
+    padding-top: 20px;
 }
 
 .contacts h2 {
     margin-bottom: 10px;
 }
 
-.email {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0px;
+.contacts p {
+    padding-bottom: 0px;
+    margin: 0px;
 }
 
-.linkedin {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.linkedin img {
+.email_icon {
     border-radius: 10%;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+    padding: 13px;
+    padding-right: 30px;
 }
 
         /* Projects Section Styling */
@@ -278,6 +282,10 @@ h3 {
             line-height: 1.5;
             text-align: left;
         }
+        .project-column ul {
+            text-align: left;
+            font-size: 20px;
+        }
         
 /* Additional Skills Section */
 
@@ -335,4 +343,38 @@ h3 {
     width: 220px;
     height: 220px;
     filter: brightness(1);  
+}
+
+
+/* Certificates */
+
+.certificates {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.certificate-column {
+    flex: 1;
+    padding: 10px;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+}
+
+.certificate-column h3 {
+    text-align: center;
+    margin: 15px;
+}
+
+.certificate-column p {
+    text-align: left;
+}
+
+.certificate-image {
+    background-color: white;
+    border-radius: 10px;
+    width: 225px;
+    height: 225px;
+    filter: brightness(1);   
 }

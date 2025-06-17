@@ -12,9 +12,10 @@
     <!-- Navigation Bar -->
     <div class="navbar">
         <a href="#Home">Home</a>
-        <a href="#About">About</a>
+        <a href="#About">What I Offer</a>
         <a href="#Projects">Latest Projects</a>
         <a href="#Technologies I Use">Technologies</a>
+        <a href="#Certificates">Certificates</a>
         <a href="#Additional Skills">Additional Skills</a>
         <a href="#Contacts">Contacts</a>
     </div>
@@ -22,7 +23,8 @@
     <!-- Home Section -->
     <section id="Home">
         <header>
-            <h1>Hi there, I am Nhlakanipho Ngubo, a Python Backend Developer</h1>
+            <h1>Hi, I'm Nhlakanipho—a Data Engineer crafting 
+                scalable ETL solutions for smarter workflows and insights.</h1>
             <img
                 src="Profile picture.jpg"
                 class="Profile-pic"
@@ -36,23 +38,22 @@
     <main>
         <!-- About Section -->
         <section id="About">
-            <h2>About Me</h2>
+            <h2>What I Offer</h2>
             <div class="about-container">
             <div class="CV-collumn">
-            <a href="https://drive.google.com/file/d/1nAXaP16Sv8xkzTl0daIS82fV5-dxlthl/view?usp=sharing" target="_blank">
-            <img src="cv image.jpeg" class="cv-image">
-            </a>
+            <img src="etl_image.png" class="cv-image">
             </div>
             <div class="about-me">
             <p>
-                I am an aspiring Python Backend Developer, eager to build scalable and efficient systems. 
-                Whether developing RESTful APIs with Flask and SQLAlchemy, optimizing database 
-                interactions with MongoDB, or containerizing applications with Docker, I excel at 
-                solving complex backend challenges. Grounded in Agile methodologies, I thrive in 
-                fast-paced, collaborative environments, contributing through daily stand-ups and 
-                strategic problem-solving. As I refine my expertise in backend architecture, 
-                microservices, and system integrations, I bring curiosity, innovation, and a growth 
-                mindset—ready to drive the future of technology.
+                Certified in Business Analysis, Python, and Data Engineering, 
+                I build scalable ETL pipelines that turn raw data into actionable insights. 
+                From web scraping and data wrangling to API development and workflow 
+                optimization, I craft efficient data solutions that empower businesses 
+                to make smarter decisions.
+            </p>
+            <p>
+                Let's build powerful, scalable workflows that drive smarter decisions. 
+                Ready to get started?
             </p>
             </div>
         </div>
@@ -64,7 +65,49 @@
             <div class="project-container">
                 <!-- First Project -->
                 <div class="project-column">
-                    <a href="https://github.com/Nhlakanipho07/CompTrack-API" target="_blank">
+                    <a href="https://github.com/Nhlakanipho07/Top-Banks-Project" style="text-decoration: none" target="_blank">
+                    <h2>ETL: Top Banks</h2>
+                    <img src="bank.png" alt="Bank building Image" class="project-image">
+                    </a>
+                    <h3>Specifications</h3>
+                    <ul class="spec-list">
+                        <li><strong>Programming Language:</strong></li>
+                        <ul><li><img src="python 3d.webp" alt="Python logo"> Python</li></ul>
+
+                        <li><strong>Database:</strong></li>
+                        <ul><li><img src="SQLite.jpeg" alt="SQLite logo">SQLite</li></ul>
+
+                        <li><strong>Development Environment:</strong></li>
+                        <ul><li><img src="jupyter_logo.png" alt="Jupyter logo"> Jupyter Notebook</li></ul>
+                        
+                        <li><strong>Frameworks / Libraries:</strong></li>
+                        <ul>
+                            <li><img src="pandas.png" alt="Pandas logo">Pandas</li>
+                            <li><img src="numpy.png" alt="Numpy icon">Numpy</li>
+                            <li><img src="BeautifulSoup.png" alt="BeautifulSoup icon">BeautifulSoup</li>
+                            <li><img src="requests.png" alt="Requests Icon">Requests</li>
+                        </ul>
+                    </ul>
+                    <h3>Description</h3>
+                    <p>
+                        Automates financial data extraction, 
+                        transformation, and storage, ensuring structured insights for efficient analysis.
+                    </p> 
+                    <h3>Key Features</h3>                   
+                        <ul>
+                            <li>Scrapes and ranks banks, converting market capitalization values for consistency.</li>
+                        </ul>
+                        <ul>
+                            <li>Adds currency conversions (GBP, EUR, INR) for global financial tracking.</li>
+                        </ul>
+                        <ul>
+                            <li>Stores refined data in a CSV file and SQLite database for seamless querying and decision-making.</li>        
+                        </ul>
+                </div>
+
+                <!-- Second Project -->
+                <div class="project-column">
+                    <a href="https://github.com/Nhlakanipho07/CompTrack-API" style="text-decoration: none" target="_blank">
                     <h2>Flask: CompTrack API</h2>
                     <img src="CompTrack 2.jpeg" alt="CompTrack API Image" class="project-image">
                     </a>
@@ -84,15 +127,18 @@
                         </ul>
                     </ul>
                     <h3>Description</h3>
-                    <p>CompTrack's backend efficiently gathers and organizes computer specifications, 
-                        ensuring seamless data management and integration into analytics workflows. 
-                        Designed for precision and scalability, it transforms raw hardware data into meaningful 
-                        insights, driving smarter resource allocation and continuous technological innovation. 
+                    <p>
+                        Streamlines computer hardware data collection for smarter resource management and 
+                        analytics integration.
                     </p>
+                    <h3>Key Features</h3>
+                    <ul><li>Organizes and structures computer specifications for easy access.</li></ul>
+                    <ul><li>Enhances scalability for seamless data handling in analytics workflows.</li></ul>
+                    <ul><li>Optimizes precision in hardware tracking for informed decision-making.</li></ul>
                 </div>
-                <!-- Second Project -->
+                <!-- Third Project -->
                 <div class="project-column">
-                    <a href="https://github.com/Nhlakanipho07/Visitor-Admin" target="_blank">
+                    <a href="https://github.com/Nhlakanipho07/Visitor-Admin" style="text-decoration: none" target="_blank">
                     <h2>MongoDB: Visitor Admin</h2>
                     <img src="visitors.jpeg" alt="Visitor Admin Image" class="project-image">
                     </a>
@@ -117,40 +163,49 @@
                     </ul>
                     
                     <h3>Description</h3>
-                    <p> Visitor Admin's backend securely collects and stores visitor credentials in a 
-                        robust MongoDB database, ensuring efficient data management and seamless retrieval. 
-                        Built for reliability and scalability, it empowers organizations to handle 
-                        critical information with confidence while laying the groundwork for advanced workflows.
+                    <p> 
+                        Captures visitor credentials, ensuring efficient data collection and retrieval.
                     </p>
+                    <h3>Key Features</h3>
+                    <ul><li>Stores visitor data in MongoDB with structured indexing for quick lookups.</li></ul>
+                    <ul><li>Lays the foundation for advanced workflows and seamless data access.</li></ul>
                 </div>
                 
             </div>
             <div class="project-container">
-                <!-- Third Project -->
+                <!-- Forth Project -->
                 <div class="project-column">
-                    <a href="https://github.com/Nhlakanipho07/Bank" target="_blank">
-                    <h2>Python Decimal: Bank</h2>    
-                    <img src="bank.png" alt="Bank Image" class="project-image">
+                    <a href="https://github.com/Nhlakanipho07/Data-Wrangling#" style="text-decoration: none" target="_blank">
+                    <h2>Pandas: Data Wrangling</h2>    
+                    <img src="data analysis.png" alt="Data Wrangling Image" class="project-image">
                     </a>
                     <h3>Specifications</h3>
                     <ul class="spec-list">
                         <li><strong>Programming Language:</strong></li>
                         <ul><li><img src="python 3d.webp" alt="Python logo"> Python</li></ul>
 
-                        <li><strong>Module:</strong></li>
+                        <li><strong>Development Environment:</strong></li>
+                        <ul><li><img src="jupyter_logo.png" alt="Jupyter logo"> Jupyter Notebook</li></ul>
+                       
+                        <li><strong>Frameworks / Libraries:</strong></li>
                         <ul>
-                            <li><img src="py_decimal.jpg" alt="numbers image">Decimal</li>
+                            <li><img src="pandas.png" alt="Pandas logo">Pandas</li>
                         </ul>
                     </ul>
                     
                     <h3>Description</h3>
-                    <p>A dynamic backend built for seamless financial transactions, precise account management, and tailored interest rates. Leveraging Python's decimal module, it ensures accuracy in monetary calculations while allowing users to create diverse account types. Designed for efficiency and reliability, it delivers a smooth and intuitive banking experience.
+                    <p>
+                        Transforms messy datasets into clean, structured formats to enable predictive insights.
                     </p>
+                    <h3>Key Features</h3>
+                    <ul><li>Cleans and standardizes personality scores and department data.</li></ul>
+                    <ul><li>Identifies high / low-risk learners, supporting performance predictions.</li></ul>
+                    <ul><li>Guides proactive decision-making, ensuring effective learner placement.</li></ul>
                 </div>
         
-                <!-- Forth Project -->
+                <!-- Fifth Project -->
                 <div class="project-column">
-                    <a href="https://github.com/Nhlakanipho07/Shop-Database" target="_blank">
+                    <a href="https://github.com/Nhlakanipho07/Shop-Database" style="text-decoration: none" target="_blank">
                     <h2>PostgreSQL: Shop Database</h2>
                     <img src="shop database.png" alt="Shop Database Image" class="project-image">
                     </a>
@@ -166,12 +221,15 @@
                         <ul><li><img src="docker_logo.png" alt="Docker logo"> Docker</li></ul>
                     </ul>
                     <h3>Description</h3>
-                    <p>From browsing to checkout, this backend fuels a seamless shopping journey. 
-                        Customers explore products, make secure payments, and track orders, while employees 
-                        ensure fast fulfillment. Structured data relationships keep inventory accurate 
-                        and transactions smooth, creating a reliable, scalable, and engaging shopping experience.
+                    <p>
+                        A scalable relational database designed for optimized querying and analytics workflows.
                     </p>
-                </div>
+                    <h3>Key Features</h3>
+                    <ul><li>Ensures data integrity with structured relations and key constraints.</li></ul>
+                    <ul><li>Supports ETL processes for seamless data retrieval and transformation.</li></ul>
+                    <ul><li>Applies clean coding practices, ensuring long-term maintainability.</li></ul>
+
+                    </div>
             </div>
         </section>
 
@@ -180,46 +238,89 @@
             <h2>Technologies I Use</h2>
             <div class="tools-container">
                 <div>
-                    <h4>Visual Studio Code</h4>
+                    <h3>Visual Studio Code</h3>
                     <img src="visual studio code.jpeg" alt="vscode logo" class="vscode_logo" style="border-radius: 10%;">
                 </div>
                 <div>
-                    <h4>GitHub</h4>
+                    <h3>GitHub</h3>
                     <img src="GitHub 3D.jpg" alt="github logo" class="github_logo" style="border-radius: 10%;">
                 </div>
                 <div>
-                    <h4>HTML</h4>
+                    <h3>HTML</h3>
                     <img src="html_logo.png" alt="html logo" class="html_logo" style="border-radius: 10%;">
                 </div>
                 <div>
-                    <h4>CSS</h4>
+                    <h3>CSS</h3>
                     <img src="css_logo.png" alt="css logo" class="css_logo" style="border-radius: 10%;">
-                </div>
+                </div>    
                 <div>
-                    <h4>Rabbitmq</h4>
-                    <img src="rabbitmq_logo.webp" alt="rabbitmq logo" class="rabbitmq_logo" style="border-radius: 10%;">
-                </div>
-                <div>
-                    <h4>Git</h4>
+                    <h3>Git</h3>
                     <img src="Git-Logo.png" alt="git logo" class="git_logo" style="border-radius: 10%;">
                 </div>
             </div>
          </section>
 
+    <section id="Certificates">
+            <h2>Certificates</h2>
+            <div class="certificates">
+                <div class="certificate-column">  
+                    <h3>Umuzi Academy | National Certificate: Business Analysis Support Practice NQF Level 5</h3>                  
+                    <img src="business analysis.png" alt="Business Analysis Support Practice Certificate" class="certificate-image">
+                    <p>Bringing together analytical thinking and creative problem-solving to research 
+                        technical challenges and develop effective solutions within consulting environments.
+                        Business needs are translated into clear, actionable specifications while 
+                        troubleshooting is conducted with precision. Adaptable communication skills and a 
+                        structured approach support collaborative Data Engineering, optimizing pipelines 
+                        and integrating solutions for meaningful results.
+                    </p>
+                </div>
+                <div class="certificate-column">                    
+                    <a href="https://www.credly.com/badges/cec3af3e-18a8-4e6e-b2f2-f6ffea3ae948/public_url" style="text-decoration: none" target="_blank">
+                        <h3>IBM Certificate: Python for Data Science, AI, and Development</h3>
+                        <img src="python-for-data-science-and-ai.png" alt="Python for Data Science IBM Certificate" class="certificate-image">
+                    </a>
+                    <p>
+                        Built a strong foundation in Python with a focus on critical data structures,
+                        programming logic, and core libraries used in Data Science workflows. 
+                        Applied these skills to manipulate and analyze datasets, and to develop basic 
+                        data-driven applications. Gained hands-on experience with essential tools such as 
+                        pandas, and numpy, reinforcing my readiness to contribute to data engineering 
+                        tasks such as data wrangling, transformation, and integration within ETL pipelines.
+                    </p>
+                </div>
+                <div class="certificate-column">                    
+                    <a href="https://www.credly.com/badges/315b2869-654f-4fe6-bb13-664dc19c8dbe/public_url" style="text-decoration: none" target="_blank">
+                        <h3>IBM Certificate: Python Project for Data Engineering | Top Banks</h3>
+                        <img src="python-project-for-data-engineering.png" alt="Python project for Data Engineering IBM Certificate" class="certificate-image">
+                    </a>
+                    <p>
+                       Developed a data pipeline for banking sector analysis, extracting financial 
+                       data via APIs and web scraping. Transformed datasets across formats, applied 
+                       structured logging for ETL tracking, and prepared analysis-ready data for repository 
+                       loading. This project showcases practical Python-based Data Engineering skills, 
+                       scalability in pipeline design, and initiative in applying industry-relevant 
+                       techniques.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
          <!-- Additional Skills Section -->
     <section id="Additional Skills" class="skills">
             <h2>Additional Skills</h2>
         <div class="skills-container">    
-            <div class="pull-request">
+            <div class="skills-description">
                 <img src="pull request.png" class="pr-image">
                 <p>
-                    Pull Requests Reviewed: 111+<br>
+                    Reviewed 111+ Pull Requests, ensuring high coding standards.
                 </p>
             </div>
-            <div class="total-projects">
+            <div class="skills-description">
                 <img src="world of data.webp" class="total-projects-image">
                 <p>
-                    Total Projects Completed: 46+<br>
+                    Completed 46+ projects, demonstrating expertise in scalable 
+                    data solutions.
                 </p>
             </div>
         </div>
@@ -227,43 +328,40 @@
         <div class="skills-description">
             <img src="problem solving.png" class="problem-solving-image">
             <p>
-                100+ problems solved on Leetcode, GeeksforGeeks, HackerRank, and Coderbyte.
+                Solved 100+ problems across multiple coding platforms, sharpening 
+                problem-solving skills.
             </p>
         </div>
         <div class="skills-description">
             <img src="collaboration.png" class="collaboration-image">            
         <p>
-            Experienced in Agile methodologies, fostering collaboration, progress, and issue 
-            resolution through daily stand-ups for streamlined team workflow.
+            Experienced in Agile workflows, leading peer learning through POD sessions, 
+            and creating clear documentation for seamless project onboarding.
         </p>
         </div>
         </div>    
     </section>
-        
-        
+
         <!-- Contacts Section -->
-        <section id="Contacts" class="contacts">
+        <section id="Contacts">
             <h2>Contact Me</h2>
-            <div class="email">
-                <h3>Emails:</h3>
-                <a href="mailto:nhlakanipho.ngubo@umuzi.org" target="_blank">
-                    <p>nhlakanipho.ngubo@umuzi.org</p>
-                </a>
+            
+            <div class="contacts">
+                <p>Let's build powerful, scalable data 
+                    solutions that drive real impact. Got a project in mind? 
+                    Let's connect—I'm ready to help!
+                </p>
+                <h3>mpilongubo07@gmail.com:</h3>
                 <a href="mailto:mpilongubo07@gmail.com" target="_blank">
-                    <p>mpilongubo07@gmail.com</p>
-                </a>
-            </div>
-            <div class="linkedin">
-                <h3>LinkedIn Profile:</h3>
-                <a href="https://www.linkedin.com/in/nhlakanipho-ngubo-119689210/" target="_blank" title="Click to see my LinkedIn profile.">
-                    <img
-                        src="linkedin_logo.webp"
-                        alt="LinkedIn logo"
-                        class="linkedin_logo">
+                    <img 
+                    src="email.svg"
+                    alt="Email icon"
+                    class="email_icon">
                 </a>
             </div>
             
         </section>
+
     </main>
 </body>
 </html>
